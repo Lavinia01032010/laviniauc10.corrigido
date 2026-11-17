@@ -388,7 +388,7 @@ Apresente um resumo quantitativo de todos os testes executados.
 
 `(12 ÷ 12) × 100 = 100%`
 
-*(Nota: Durante o desenvolvimento dos testes, o caso de teste "email com tipo incorreto" apresentou falha inicial por um typeerror (esqueci do colchete final) na mensagem esperada, sendo corrigido e reexecutado até atingir 100% de aprovação.)
+*(Nota: Durante o desenvolvimento dos testes, o caso de teste "email com tipo incorreto" apresentou falha inicial por um syntaxerror (esqueci do parêntese final) na mensagem esperada, mas o erro foi corrigido e reexecutado até atingir 100% de aprovação.)
 
 ---
 
@@ -400,7 +400,11 @@ Insira capturas de tela (prints) que comprovem a execução dos testes no ambien
 Inclua evidências que mostrem:
 
 - Execução dos testes no Jest.
+![alt text](img/print.png)
+
 - Quantidade de testes aprovados e reprovados.
+![alt text](img/Captura%20de%20tela%202026-11-17%20092710.png)
+
 - Mensagens de erro, quando houver.
 - Correções realizadas após a identificação de falhas, se aplicável.
 
@@ -412,16 +416,7 @@ Registre os problemas encontrados durante a execução dos testes e as soluçõe
 
 | Problema identificado | Causa do problema | Solução implementada | Situação |
 | --- | --- | --- | --- |
-| \[Descreva o erro\] | \[Possível causa\] | \[Correção realizada\] | \[Resolvido\] |
-| \[Descreva o erro\] | \[Possível causa\] | \[Correção realizada\] | \[Resolvido\] 
-| \[Descreva o erro\] | \[Possível causa\] | \[Correção realizada\] | \[Resolvido\] 
-
-Caso nenhum problema tenha sido identificado, explique.
-
-**Resposta:**
-
-\[Escreva aqui\]
-
+| Falha no teste "E-mail com tipo incorreto" | Ausência do parêntese final | Fechei os parênteses corretamente | Resolvido |
 ---
 
 ## 9\. Análise dos resultados
@@ -434,11 +429,14 @@ Responda às questões:
 4. Quais alterações foram necessárias para corrigir os problemas encontrados?
 5. Existem funcionalidades que ainda precisam ser testadas? Quais?
 
+
 **Respostas:**
 
-1. Nos resultados finais sim, mas enquanto fazia alguns apresentaram falhas.
-2. 
-
+1. Nos resultados finais sim, mas enquanto fazia um apresentou falha.
+2. Verificar cadastro válido completo; E-mail sem @; Modalidade/interesse invalido; Modalidade/interesse com diferenciação de caixa
+3. Não.
+4. Apenas fechar os parênteses
+5. Não.
 ---
 
 ## 10\. Conclusão
@@ -451,9 +449,9 @@ Apresente uma conclusão sobre o processo de testes realizado.
 
 **Conclusão da equipe:**
 
-- 
--
--
+- Sim.
+- Sim
+- Os testes unitários são importantes pois nos ajuda a prevenir possíveis erros futuramente.
 
 ---
 
